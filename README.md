@@ -2,9 +2,19 @@
 
 ## Objective
 
-The goal of this assignment is to assess your ability to work with data structures and demonstrate your proficiency in transforming data from one format to another. You will be provided with a CSV file containing real world data events from our device data. Your task is to convert this data into another structured format of your choice (e.g., JSON, YAML, TOML, XML) and ensure that the resulting structure is well-formed and usable.
+The goal of this assignment is to assess your ability to work with data structures and demonstrate your proficiency in transforming data from one format to another. You will be provided with a CSV file containing real world data events from our device data. 
+
+Your task is to convert this data into another structured format of your choice (e.g., JSON, YAML, TOML, XML) and ensure that the resulting structure is well-formed and usable.
 
 The end goal of this data structure will be to send it off to another service that will ingest all this data and process it into a RedShift database; which will be the goal of our in person coding exercise!
+
+## Developer Notes
+
+We want to respect your time and request that you do **not** spend more than one (1) hour on this solution. This does mean that you might have to make some different design decisions when coming up with your solution.  Please take that into account when coming up with your solution. 
+
+If you would like to place comments in your solution for discussion during the in-person interview process, please feel free to do that.
+
+And while we do require strong C# skills for this position, we also use many other technical tools to accomplish our tasks. Please feel free to use your most effective tool to accomplish this task with the amount of time that is allotted. This could be a simple CLI tool like `jq`. A scripting language like JavaScript, Ruby, or Python. Or you can use a static language like C# if that is what you're most comfortable with.
 
 ## Requirements
 
@@ -12,6 +22,10 @@ The end goal of this data structure will be to send it off to another service th
 
 * You will receive a CSV file containing rows of event data.
 * The CSV file will include various columns with data types such as strings, integers, dates, and possibly nested structures (e.g., serialized JSON strings).
+
+### Input Data Validations
+
+There is no need to do any data validation on the data. We're not trying to trick you with anything. It is great to put comments for discussion on where it is useful to keep an eye out for possible data validation issues, but it is not part of the requirements for the interview process.
 
 ### Output Data
 
@@ -32,19 +46,17 @@ Be prepared to explain some details on why you chose the format you decide on.
 
 ### Error Handling
 
-* Your solution should gracefully handle any potential errors, such as malformed CSV data or data type mismatches.
-* Implement validation checks to ensure the integrity of the transformed data.
-* Provide appropriate error messages or logging for any issues encountered during the transformation process.
+Your solution should gracefully handle any potential errors, such as malformed CSV data or data type mismatches. 
+
+It can simply skip any lines that could possibly cause errors. Log a message to the console.
 
 ### Performance Considerations
 
-* The solution should be efficient and capable of handling large CSV files with minimal performance degradation.
-* Document any assumptions made about the size of the data or performance trade-offs.
+Please feel free to document any assumptions made about the size of the data or performance trade-offs. Or any questions or optimizations you have on possible ways to handle this differently.
 
 ### Code Requirements
 
 * Your solution can be implemented using C# and .NET Core. You can also use any other language or tool that you feel can accomplish the same goal in a clearer manor. Please be ready to explain why you chose the language and solution that you did though. Acceptable languages or tools would include, but are not limited to: JavaScript, TypeScript, Ruby, Python, jq.
-* The code should be well-organized, modular, and follow best practices for software development (e.g., SOLID principles, appropriate use of design patterns).
 * Include comments and documentation to explain your code and the decisions you made.
 
 ### Deliverables
@@ -52,25 +64,14 @@ Be prepared to explain some details on why you chose the format you decide on.
 * The source code for the solution, including any necessary dependencies.
 * A brief README file that explains how to run your solution, any assumptions made, and any known limitations.
 * The transformed data file in the chosen format.
-* Optional: Include unit tests to demonstrate the correctness of your solution.
 
 ### Evaluation Criteria
 
-* Correctness: Does the solution accurately transform the data as specified?
-* Code Quality: Is the code clean, well-organized, and adheres to best practices?
-* Performance: Does the solution efficiently handle the provided data?
-* Error Handling: Are potential errors managed appropriately?
-* Documentation: Is the README clear and informative?
+We're simply looking for some code that will convert from CSV to the chosen format. The end goal is to simply have a discussion with you on the choices you make. Discuss pros and cons on any of those choices and to have a good technical discussion about other possible solutions.
 
 ### Submission Instructions
 
-* Please create a branch in the provided repository in the format of `/interview/[first-last]`
-* When you're ready, please submit a pull request with your implemented solution.
-* Ensure that all code and deliverables are included and clearly organized. If you need to clarify anything, please do so in your pull request.
-
-### Deadline
-
-The assignment is due by 7 days from the time you receive it. Please ensure that you manage your time effectively to meet this deadline.
+Ensure that all code and deliverables are included and clearly organized. If you need to clarify anything, please do so in the README or through text.
 
 ### Note
 
