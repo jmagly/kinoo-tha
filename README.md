@@ -8,6 +8,10 @@ Your task is to convert this data into another structured format of your choice 
 
 The end goal of this data structure will be to send it off to another service that will ingest all this data and process it into a RedShift database; which will be the goal of our in person coding exercise!
 
+## Getting Started
+
+You should be able to fork this repository into your personal github account. You can commit all your changes to your fork. Once you have your fork in a state that you are ready to submit, please send us a link to the forked repository for us to checkout and review your implementation.
+
 ## Developer Notes
 
 We want to respect your time and request that you do **not** spend more than one (1) hour on this solution. This does mean that you might have to make some different design decisions when coming up with your solution.  Please take that into account when coming up with your solution. 
@@ -72,6 +76,8 @@ We're simply looking for some code that will convert from CSV to the chosen form
 ### Submission Instructions
 
 Ensure that all code and deliverables are included and clearly organized. If you need to clarify anything, please do so in the README or through text.
+
+After you've completed the exercise, please email us a link to your forked repository so that we can spend some time reviewing your solution.
 
 ### Note
 
