@@ -1,0 +1,1 @@
+Postgres/Redshift - EF Adapter NPGsql
